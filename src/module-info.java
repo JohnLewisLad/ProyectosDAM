@@ -8,4 +8,5 @@
 module DataAccessDAM {
 	requires org.jdom2;
 	requires com.fasterxml.jackson.core;
+	requires com.fasterxml.jackson.databind;
 }

@@ -1,10 +1,10 @@
 # DataAccessDAM
 
-Proyecto de Java del módulo **Acceso a Datos** (ciclo DAM). Demuestra cómo leer datos de un fichero XML y convertirlos en objetos Java.
+Proyecto de Java del módulo **Acceso a Datos** (ciclo DAM). Demuestra cómo leer datos de ficheros XML y JSON y convertirlos en objetos Java.
 
 ## Descripción
 
-El programa lee `peliculas.xml` con la librería **JDOM2**, parsea cada elemento `<pelicula>` y construye una lista de objetos `Pelicula`. También incluye un lector JSON con **Jackson** (`ReadJSON`), pendiente de completar.
+El programa lee `peliculas.xml` con la librería **JDOM2** y `peliculas.json` con **Jackson** (`ReadJSON`), parsea cada película y construye la lista correspondiente (los datos se imprimen por pantalla).
 
 ## Estructura
 
@@ -15,9 +15,10 @@ src/
     ├── Main.java             # Punto de entrada
     ├── ReadXML.java          # Lector XML (JDOM2)
     ├── ReadJSON.java         # Lector JSON (Jackson)
-    └── Pelicula.java         # Clave de dominio (POJO)
-lib/                          # JARs: jdom2, jackson-core
-peliculas.xml                 # Datos de ejemplo (10 películas)
+    └── Pelicula.java         # Clase de dominio (POJO)
+lib/                          # JARs: jdom2, jackson-core, jackson-databind, jackson-annotations
+peliculas.xml                 # Datos de ejemplo XML (10 películas)
+peliculas.json                # Datos de ejemplo JSON (10 películas)
 ```
 
 ## Requisitos
@@ -32,11 +33,11 @@ Importa el proyecto en Eclipse (*File > Import > Existing Projects*) y ejecuta `
 Por línea de comandos, desde la raíz del proyecto:
 
 ```bash
-javac -d bin --module-path lib -m DataAccessDAM src/module-info.java src/DataAccess/*.java
-java --module-path lib -m DataAccessDAM/DataAccess.Main
+javac -d bin --module-path lib src/module-info.java src/DataAccess/*.java
+java --module-path bin:lib -m DataAccessDAM/DataAccess.Main
 ```
 
-> El programa busca `peliculas.xml` en el directorio de trabajo actual: ejecútalo desde la raíz del proyecto.
+> El programa busca `peliculas.xml` y `peliculas.json` en el directorio de trabajo actual: ejecútalo desde la raíz del proyecto.
 
 ## Licencia
 

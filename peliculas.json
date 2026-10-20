@@ -1,0 +1,14 @@
+{
+    "peliculas": [
+		{ "id": 1, "titulo": "Pulp Fiction", "año": 1994, "genero": "Crimen" },
+		{ "id": 2, "titulo": "Jurassic Park", "año": 1993, "genero": "Aventura" },
+		{ "id": 3, "titulo": "El silencio de los corderos", "año": 1991, "genero": "Terror" },
+		{ "id": 4, "titulo": "Whiplash", "año": 2014, "genero": "Terror" },
+		{ "id": 5, "titulo": "Coco", "año": 2017, "genero": "Animación" },
+		{ "id": 6, "titulo": "Mad Max: Fury Road", "año": 2015, "genero": "Acción" },
+		{ "id": 7, "titulo": "La La Land", "año": 2016, "genero": "Romance" },
+		{ "id": 8, "titulo": "El gran hotel Budapest", "año": 2014, "genero": "Comedia" },
+		{ "id": 9, "titulo": "Blade Runner 2049", "año": 2017, "genero": "Ciencia ficción" },
+		{ "id": 10, "titulo": "12 angry men", "año": 1957, "genero": "Drama" }
+    ]
+}
