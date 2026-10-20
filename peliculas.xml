@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+    <pelicula>
+        <id>1</id>
+        <titulo>Interstellar</titulo>
+        <año>2014</año>
+        <genero>Ciencia ficción</genero>
+    </pelicula>
+    <pelicula>
+        <id>2</id>
+        <titulo>El Padrino</titulo>
+        <año>1972</año>
+        <genero>Drama</genero>
+    </pelicula>
+    <pelicula>
+        <id>3</id>
+        <titulo>Matrix</titulo>
+        <año>1999</año>
+        <genero>Ciencia ficción</genero>
+    </pelicula>
+    <pelicula>
+        <id>4</id>
+        <titulo>Parásitos</titulo>
+        <año>2019</año>
+        <genero>Thriller</genero>
+    </pelicula>
+    <pelicula>
+        <id>5</id>
+        <titulo>Toy Story</titulo>
+        <año>1995</año>
+        <genero>Animación</genero>
+    </pelicula>
+    <pelicula>
+        <id>6</id>
+        <titulo>Gladiator</titulo>
+        <año>2000</año>
+        <genero>Acción</genero>
+    </pelicula>
+    <pelicula>
+        <id>7</id>
+        <titulo>Titanic </titulo>
+        <año>1997</año>
+        <genero>Romance</genero>
+    </pelicula>
+    <pelicula>
+        <id>8</id>
+        <titulo>El viaje de Chihiro</titulo>
+        <año>2001</año>
+        <genero>Animación</genero>
+    </pelicula>
+    <pelicula>
+        <id>9</id>
+        <titulo>Origen</titulo>
+        <año>2010</año>
+        <genero>Ciencia ficción</genero>
+    </pelicula>
+    <pelicula>
+        <id>10</id>
+        <titulo>Cadena perpetua</titulo>
+        <año>1994</año>
+        <genero>Drama</genero>
+    </pelicula>
+</peliculas>
