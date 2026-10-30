@@ -2,25 +2,21 @@ package DataAccess;
 
 public class Pelicula {
 	
-	int id;
+	final int id;
 	String titulo;
-	int anio;
+	int año;
 	String genero;
 
-	public Pelicula(int this_id, String this_titulo, int this_anio, String this_genero) {		
+	public Pelicula(int this_id, String this_titulo, int this_año, String this_genero) {		
 	    id = this_id;
 	    titulo = this_titulo;
-	    anio = this_anio;
+	    año = this_año;
 	    genero = this_genero;	    
 		
 	}
 
 	public int getId() {
 		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getTitulo() {
@@ -31,12 +27,12 @@ public class Pelicula {
 		this.titulo = titulo;
 	}
 
-	public int getAnio() {
-		return anio;
+	public int getAño() {
+		return año;
 	}
 
-	public void setAnio(int anio) {
-		this.anio = anio;
+	public void setAño(int año) {
+		this.año = año;
 	}
 
 	public String getGenero() {

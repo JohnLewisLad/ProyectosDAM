@@ -9,4 +9,7 @@ module DataAccessDAM {
 	requires org.jdom2;
 	requires com.fasterxml.jackson.core;
 	requires com.fasterxml.jackson.databind;
+
+	// Jackson necesita acceso por reflexión a los campos de Pelicula
+	opens DataAccess to com.fasterxml.jackson.databind;
 }
