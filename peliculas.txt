@@ -1,0 +1,11 @@
+id,titulo,año,genero
+0,El Señor de los Anillos,2001,Fantástico
+1,Star Wars,1977,Ciencia ficción
+2,El Rey León,1994,Animación
+3,Forrest Gump,1994,Drama
+4,Seven,1995,Thriller
+5,Regreso al futuro,1985,Ciencia ficción
+6,La vida es bella,1997,Drama
+7,Buscando a Nemo,2003,Animación
+8,El club de la lucha,1999,Drama
+9,Malditos bastardos,2009,Bélico

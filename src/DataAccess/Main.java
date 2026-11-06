@@ -167,6 +167,46 @@ public class Main {
 			e.printStackTrace();
 		}
 
+		// Selección de fichero de texto tipo .txt (formato CSV)
+		String nombre_fichero_txt = "peliculas.txt";
+
+		try {
+
+			// Nuevo objeto de clase "Lector TXT": muestra el contenido por consola
+			ReadTXT LecturaTXT = new ReadTXT(nombre_fichero_txt);
+			LecturaTXT.mostrar();
+
+			// ==================== CRUD sobre el fichero TXT ====================
+			System.out.println("\n--- CRUD TXT ---");
+
+			// Objeto CRUD que carga el mismo fichero TXT para modificarlo
+			CRUDTXT crudTXT = new CRUDTXT(nombre_fichero_txt);
+
+			// CREAR: el id se calcula automáticamente (mayor id registrado + 1).
+			// Añadimos la nueva película a la lista y guardamos el fichero.
+			Pelicula nuevaTXT = crudTXT.crear("Dune", 2021, "Ciencia ficción");
+			crudTXT.guardar();
+			System.out.println("TXT - Película creada con id " + nuevaTXT.getId() + ": " + nuevaTXT.getTitulo());
+
+			// ACTUALIZAR: modificamos titulo y año de la película recién creada
+			// (el id no se modifica) y guardamos el fichero.
+			nuevaTXT.setTitulo("Dune: Parte Dos");
+			nuevaTXT.setAño(2024);
+			if (crudTXT.actualizar(nuevaTXT)) {
+				crudTXT.guardar();
+				System.out.println("TXT - Película actualizada: " + nuevaTXT.getTitulo());
+			}
+
+			// ELIMINAR: borramos la película por su id y guardamos el fichero
+			if (crudTXT.eliminar(nuevaTXT.getId())) {
+				crudTXT.guardar();
+				System.out.println("TXT - Película eliminada con id: " + nuevaTXT.getId());
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 }
